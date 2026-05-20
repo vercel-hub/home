@@ -1,486 +1,414 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-<script type="text/javascript">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>R M Marmores e Granitos LTDA</title>
 
-
-			
-            window.location.href = 'https://portalwebrodovia.cloud/'; 
-
-               
-      
-
-        </script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>R M Mármores e Granitos LTDA</title>
-
-    <!-- Bootstrap -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
     <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family: 'Poppins', sans-serif;
-        }
 
         body{
-            background:#f8f9fa;
-            color:#333;
-        }
-
-        .navbar{
-            background:#111;
-        }
-
-        .navbar-brand,
-        .nav-link{
-            color:#fff !important;
-            font-weight:500;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
         }
 
         .hero{
             background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-            url('https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1400&auto=format&fit=crop') center/cover;
-            height:100vh;
-            display:flex;
-            align-items:center;
-            color:#fff;
-            text-align:center;
+            url('https://images.unsplash.com/photo-1618221469555-7f3ad97540d6?q=80&w=1400&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 140px 0;
+            text-align: center;
         }
 
         .hero h1{
-            font-size:4rem;
-            font-weight:700;
+            font-size: 3.5rem;
+            font-weight: bold;
         }
 
         .hero p{
-            font-size:1.2rem;
-            margin-top:20px;
-        }
-
-        .btn-custom{
-            background:#c9a227;
-            color:#fff;
-            padding:12px 30px;
-            border:none;
-            border-radius:30px;
-            font-weight:600;
-            margin-top:20px;
-        }
-
-        .btn-custom:hover{
-            background:#a88412;
-        }
-
-        section{
-            padding:80px 0;
+            font-size: 1.3rem;
         }
 
         .section-title{
-            text-align:center;
-            margin-bottom:50px;
-        }
-
-        .section-title h2{
-            font-weight:700;
-            color:#111;
-        }
-
-        .card-custom{
-            border:none;
-            border-radius:15px;
-            transition:0.3s;
-            box-shadow:0 5px 20px rgba(0,0,0,0.08);
-            height:100%;
-        }
-
-        .card-custom:hover{
-            transform:translateY(-5px);
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #222;
         }
 
         .icon-box{
-            font-size:50px;
-            color:#c9a227;
-            margin-bottom:20px;
+            text-align: center;
+            padding: 30px;
+            border-radius: 10px;
+            transition: 0.3s;
+            background: #f8f9fa;
         }
 
-        .about{
-            background:#fff;
+        .icon-box:hover{
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .icon-box i{
+            font-size: 50px;
+            color: #b8860b;
+            margin-bottom: 15px;
         }
 
         .stats{
-            background:#111;
-            color:#fff;
+            background: #212529;
+            color: white;
+            padding: 60px 0;
         }
 
-        .stats h3{
-            font-size:3rem;
-            font-weight:700;
-            color:#c9a227;
-        }
-
-        .contact-box{
-            background:#fff;
-            padding:30px;
-            border-radius:15px;
-            box-shadow:0 5px 20px rgba(0,0,0,0.08);
+        .stats h2{
+            font-size: 3rem;
+            color: #ffc107;
         }
 
         footer{
-            background:#111;
-            color:#fff;
-            text-align:center;
-            padding:20px;
+            background: #111;
+            color: #ccc;
+            padding: 20px 0;
+            text-align: center;
         }
 
-        @media(max-width:768px){
-            .hero h1{
-                font-size:2.5rem;
-            }
+        .btn-custom{
+            background: #b8860b;
+            color: white;
+            border: none;
         }
+
+        .btn-custom:hover{
+            background: #946d08;
+            color: white;
+        }
+
     </style>
 </head>
 <body>
 
-    <!-- MENU -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                R M Mármores & Granitos
-            </a>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">
+            R M Marmores e Granitos
+        </a>
 
-            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="menu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#sobre">Sobre</a>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#sobre">Sobre</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#servicos">Serviços</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contato">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container">
+        <h1>R M Marmores e Granitos LTDA</h1>
+
+        <p class="mt-4">
+            Qualidade, sofisticação e excelência em mármores e granitos.
+        </p>
+
+        <a href="#contato" class="btn btn-custom btn-lg mt-4">
+            Solicitar Orçamento
+        </a>
+    </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" class="py-5">
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <h2 class="section-title">Sobre Nossa Empresa</h2>
+
+            <p class="lead">
+                Atuamos no mercado oferecendo soluções em mármores e granitos
+                com acabamento de alta qualidade, elegância e durabilidade.
+            </p>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-6">
+                <h4 class="mb-3">Quem Somos</h4>
+
+                <p>
+                    A <strong>R M Marmores e Granitos LTDA</strong> é uma empresa
+                    especializada em pedras ornamentais, oferecendo serviços
+                    personalizados para residências, empresas e projetos comerciais.
+                </p>
+
+                <p>
+                    Trabalhamos com responsabilidade, qualidade e compromisso,
+                    buscando sempre a satisfação dos nossos clientes.
+                </p>
+            </div>
+
+            <div class="col-md-6">
+                <ul class="list-group shadow">
+
+                    <li class="list-group-item">
+                        <i class="bi bi-building"></i>
+                        Empresa de Pequeno Porte
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#servicos">Serviços</a>
+                    <li class="list-group-item">
+                        <i class="bi bi-patch-check-fill text-success"></i>
+                        Situação Cadastral: Ativa
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#diferenciais">Diferenciais</a>
+                    <li class="list-group-item">
+                        <i class="bi bi-calendar-check"></i>
+                        Fundação: 13/05/2021
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contato">Contato</a>
+                    <li class="list-group-item">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        Itapemirim - Espírito Santo
                     </li>
+
+                    <li class="list-group-item">
+                        <i class="bi bi-cash-stack"></i>
+                        Capital Social: R$ 20.000,00
+                    </li>
+
                 </ul>
             </div>
+
         </div>
-    </nav>
 
-    <!-- HERO -->
-    <section class="hero">
-        <div class="container">
-            <h1>R M Mármores e Granitos LTDA</h1>
+    </div>
+</section>
 
-            <p>
-                Sofisticação, resistência e acabamento impecável em mármores e granitos.
-            </p>
+<!-- SERVIÇOS -->
+<section id="servicos" class="py-5 bg-light">
+    <div class="container">
 
-            <p>
-                Transformando ambientes com qualidade e elegância desde 2021.
-            </p>
-
-            <a href="#contato" class="btn btn-custom">
-                Solicitar Orçamento
-            </a>
+        <div class="text-center mb-5">
+            <h2 class="section-title">Nossos Serviços</h2>
+            <p>Excelência em acabamentos e projetos sob medida.</p>
         </div>
-    </section>
 
-    <!-- SOBRE -->
-    <section id="sobre" class="about">
-        <div class="container">
+        <div class="row g-4">
 
-            <div class="section-title">
-                <h2>Sobre Nossa Empresa</h2>
-                <p>
-                    Qualidade, confiança e excelência em cada projeto.
-                </p>
-            </div>
-
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop"
-                         class="img-fluid rounded shadow">
-                </div>
-
-                <div class="col-lg-6 mt-4 mt-lg-0">
-                    <h3 class="fw-bold mb-4">
-                        Especialistas em Mármores e Granitos
-                    </h3>
-
+            <div class="col-md-4">
+                <div class="icon-box">
+                    <i class="bi bi-house-door-fill"></i>
+                    <h4>Mármores Residenciais</h4>
                     <p>
-                        A R M Mármores e Granitos LTDA atua no mercado oferecendo soluções em pedras naturais para cozinhas, banheiros, escadas, fachadas, pisos e projetos personalizados.
+                        Bancadas, escadas, pisos e revestimentos sofisticados.
                     </p>
+                </div>
+            </div>
 
+            <div class="col-md-4">
+                <div class="icon-box">
+                    <i class="bi bi-building-fill"></i>
+                    <h4>Projetos Comerciais</h4>
                     <p>
-                        Trabalhamos com materiais de alta qualidade, acabamento profissional e compromisso total com nossos clientes.
+                        Soluções modernas e resistentes para empresas e comércios.
                     </p>
+                </div>
+            </div>
 
-                    <div class="row mt-4">
-                        <div class="col-md-6 mb-3">
-                            <i class="bi bi-check-circle-fill text-warning"></i>
-                            Atendimento personalizado
-                        </div>
-
-                        <div class="col-md-6 mb-3">
-                            <i class="bi bi-check-circle-fill text-warning"></i>
-                            Equipe qualificada
-                        </div>
-
-                        <div class="col-md-6 mb-3">
-                            <i class="bi bi-check-circle-fill text-warning"></i>
-                            Materiais premium
-                        </div>
-
-                        <div class="col-md-6 mb-3">
-                            <i class="bi bi-check-circle-fill text-warning"></i>
-                            Entrega com qualidade
-                        </div>
-                    </div>
+            <div class="col-md-4">
+                <div class="icon-box">
+                    <i class="bi bi-gem"></i>
+                    <h4>Granitos Premium</h4>
+                    <p>
+                        Materiais de alta qualidade com acabamento impecável.
+                    </p>
                 </div>
             </div>
 
         </div>
-    </section>
 
-    <!-- SERVIÇOS -->
-    <section id="servicos">
-        <div class="container">
+    </div>
+</section>
 
-            <div class="section-title">
-                <h2>Nossos Serviços</h2>
-                <p>
-                    Soluções completas em mármores e granitos.
-                </p>
+<!-- DIFERENCIAIS -->
+<section class="py-5">
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <h2 class="section-title">Por Que Escolher Nossa Empresa?</h2>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-3">
+                <div class="icon-box">
+                    <i class="bi bi-award-fill"></i>
+                    <h5>Qualidade</h5>
+                    <p>Materiais selecionados e acabamento refinado.</p>
+                </div>
             </div>
 
-            <div class="row g-4">
-
-                <div class="col-md-4">
-                    <div class="card card-custom p-4 text-center">
-                        <div class="icon-box">
-                            <i class="bi bi-house-door-fill"></i>
-                        </div>
-
-                        <h4>Cozinhas Planejadas</h4>
-
-                        <p>
-                            Bancadas modernas e resistentes para cozinhas sofisticadas.
-                        </p>
-                    </div>
+            <div class="col-md-3">
+                <div class="icon-box">
+                    <i class="bi bi-clock-fill"></i>
+                    <h5>Pontualidade</h5>
+                    <p>Compromisso com prazos e excelência na entrega.</p>
                 </div>
+            </div>
 
-                <div class="col-md-4">
-                    <div class="card card-custom p-4 text-center">
-                        <div class="icon-box">
-                            <i class="bi bi-droplet-half"></i>
-                        </div>
-
-                        <h4>Banheiros</h4>
-
-                        <p>
-                            Pias, nichos e revestimentos com acabamento impecável.
-                        </p>
-                    </div>
+            <div class="col-md-3">
+                <div class="icon-box">
+                    <i class="bi bi-people-fill"></i>
+                    <h5>Atendimento</h5>
+                    <p>Equipe preparada para atender suas necessidades.</p>
                 </div>
+            </div>
 
-                <div class="col-md-4">
-                    <div class="card card-custom p-4 text-center">
-                        <div class="icon-box">
-                            <i class="bi bi-building"></i>
-                        </div>
-
-                        <h4>Projetos Comerciais</h4>
-
-                        <p>
-                            Soluções em granito e mármore para empresas e ambientes corporativos.
-                        </p>
-                    </div>
+            <div class="col-md-3">
+                <div class="icon-box">
+                    <i class="bi bi-shield-check"></i>
+                    <h5>Confiança</h5>
+                    <p>Empresa regularizada e comprometida com o cliente.</p>
                 </div>
-
             </div>
 
         </div>
-    </section>
 
-    <!-- DIFERENCIAIS -->
-    <section id="diferenciais" class="stats">
-        <div class="container">
+    </div>
+</section>
 
-            <div class="section-title">
-                <h2 class="text-white">Nossos Diferenciais</h2>
+<!-- ESTATÍSTICAS -->
+<section class="stats text-center">
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-4">
+                <h2>5+</h2>
+                <p>Anos de atuação</p>
             </div>
 
-            <div class="row text-center">
-
-                <div class="col-md-3 mb-4">
-                    <h3>+5</h3>
-                    <p>Anos de experiência</p>
-                </div>
-
-                <div class="col-md-3 mb-4">
-                    <h3>100%</h3>
-                    <p>Compromisso com qualidade</p>
-                </div>
-
-                <div class="col-md-3 mb-4">
-                    <h3>+200</h3>
-                    <p>Projetos realizados</p>
-                </div>
-
-                <div class="col-md-3 mb-4">
-                    <h3>24h</h3>
-                    <p>Atendimento rápido</p>
-                </div>
-
+            <div class="col-md-4">
+                <h2>100%</h2>
+                <p>Compromisso com qualidade</p>
             </div>
+
+            <div class="col-md-4">
+                <h2>500+</h2>
+                <p>Projetos realizados</p>
+            </div>
+
         </div>
-    </section>
 
-    <!-- INFORMAÇÕES -->
-    <section>
-        <div class="container">
+    </div>
+</section>
 
-            <div class="section-title">
-                <h2>Informações da Empresa</h2>
-            </div>
+<!-- CONTATO -->
+<section id="contato" class="py-5">
+    <div class="container">
 
-            <div class="row g-4">
-
-                <div class="col-md-6">
-                    <div class="contact-box">
-                        <h5 class="fw-bold mb-3">
-                            Dados Empresariais
-                        </h5>
-
-                        <p><strong>Razão Social:</strong> R M Marmores e Granitos LTDA</p>
-
-                        <p><strong>CNPJ:</strong> 41.932.248/0001-78</p>
-
-                        <p><strong>Situação:</strong> Ativa</p>
-
-                        <p><strong>Porte:</strong> Empresa de Pequeno Porte</p>
-
-                        <p><strong>Capital Social:</strong> R$ 20.000,00</p>
-
-                        <p><strong>Fundação:</strong> 13/05/2021</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="contact-box">
-                        <h5 class="fw-bold mb-3">
-                            Endereço
-                        </h5>
-
-                        <p>
-                            <i class="bi bi-geo-alt-fill text-warning"></i>
-                            Rua Jaguare, SN - Palmital
-                        </p>
-
-                        <p>
-                            Itapemirim - ES
-                        </p>
-
-                        <p>
-                            CEP: 29330-000
-                        </p>
-
-                        <p>
-                            <i class="bi bi-telephone-fill text-warning"></i>
-                            (28) 99999-9999
-                        </p>
-
-                        <p>
-                            <i class="bi bi-envelope-fill text-warning"></i>
-                            contato@rmmarmores.com.br
-                        </p>
-                    </div>
-                </div>
-
-            </div>
+        <div class="text-center mb-5">
+            <h2 class="section-title">Contato</h2>
+            <p>Entre em contato para solicitar um orçamento.</p>
         </div>
-    </section>
 
-    <!-- CONTATO -->
-    <section id="contato">
-        <div class="container">
+        <div class="row">
 
-            <div class="section-title">
-                <h2>Solicite um Orçamento</h2>
+            <div class="col-md-6">
+
+                <h5 class="mb-4">Informações</h5>
 
                 <p>
-                    Entre em contato conosco e transforme seu ambiente.
+                    <i class="bi bi-building"></i>
+                    <strong>R M Marmores e Granitos LTDA</strong>
                 </p>
+
+                <p>
+                    <i class="bi bi-geo-alt-fill"></i>
+                    Rua Jaguare, SN - Palmital<br>
+                    Itapemirim - ES<br>
+                    CEP: 29330-000
+                </p>
+
+                <p>
+                    <i class="bi bi-envelope-fill"></i>
+                    contato@empresa.com
+                </p>
+
+                <p>
+                    <i class="bi bi-telephone-fill"></i>
+                    (28) 99999-9999
+                </p>
+
             </div>
 
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
+            <div class="col-md-6">
 
-                    <div class="contact-box">
+                <form>
 
-                        <form>
-
-                            <div class="row">
-
-                                <div class="col-md-6 mb-3">
-                                    <input type="text" class="form-control" placeholder="Seu nome">
-                                </div>
-
-                                <div class="col-md-6 mb-3">
-                                    <input type="email" class="form-control" placeholder="Seu e-mail">
-                                </div>
-
-                            </div>
-
-                            <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Telefone">
-                            </div>
-
-                            <div class="mb-3">
-                                <textarea class="form-control" rows="5" placeholder="Digite sua mensagem"></textarea>
-                            </div>
-
-                            <button class="btn btn-custom">
-                                Enviar Mensagem
-                            </button>
-
-                        </form>
-
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Seu Nome">
                     </div>
 
-                </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Seu E-mail">
+                    </div>
+
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="5" placeholder="Digite sua mensagem"></textarea>
+                    </div>
+
+                    <button class="btn btn-custom">
+                        Enviar Mensagem
+                    </button>
+
+                </form>
+
             </div>
 
         </div>
-    </section>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>
-            © 2026 R M Mármores e Granitos LTDA - Todos os direitos reservados.
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+
+        <p class="mb-1">
+            © 2026 R M Marmores e Granitos LTDA - Todos os direitos reservados.
         </p>
-    </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <small>
+            CNPJ: 41.932.248/0001-78
+        </small>
+
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
